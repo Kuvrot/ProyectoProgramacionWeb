@@ -1,7 +1,7 @@
 <?php
 
 
-
+//Esta es la página del usuario
    
 
 ?>
