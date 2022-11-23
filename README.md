@@ -1,3 +1,3 @@
 # FinProyect
 Pagina Pages
-https://izaelmejia.github.io/FinProyect/
+https://ihc-jasf.000webhostapp.com/pages/
