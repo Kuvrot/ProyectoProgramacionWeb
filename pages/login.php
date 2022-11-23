@@ -1,5 +1,5 @@
 <?php 
-//Acccede al archivo que sentencia la conexión con la base de datos
+//La página de login para que el usuario se registre
 
 ?>
 
