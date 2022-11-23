@@ -69,6 +69,6 @@
   </section>
 
   <?php include "../apis/bootstrapScriptsApi.php";?>
-      <script src="../js/auth.js"></script>
+      <script type="text/javascript" src="../js/auth.js"></script>
 </body>
 </html>

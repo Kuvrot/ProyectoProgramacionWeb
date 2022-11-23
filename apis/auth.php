@@ -11,7 +11,7 @@ $pass = false;
 
 function response ($text) {
     
-    echo json_encode($text);
+    echo ($text);
 
 
 }
@@ -28,8 +28,7 @@ if (isset($_POST["email"])) {
 
         //Hace una consulta de tipo SELECT y si no arroja ninguna columna los datos son erroneos, de lo contrario son correctos 
         //y la sesión iniciará
-        $stmt = $conn->prepare("SELECT * FROM users where email = '$email' AND password = '$password'");
-        $stmt->execute();
+        $stmt = $conn->query("SELECT * FROM users where email = '$email' AND password = '$password'");
         if ($row = $stmt->fetch()){
 
                         

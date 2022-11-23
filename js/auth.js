@@ -8,23 +8,22 @@ document.getElementById('login').onclick = function (){
   
   xhr.open('post' , "../apis/auth.php");
   
+  xhr.send(data);
+
   xhr.onload = () => {
       
-      let answer_0 = JSON.stringify("TRUE");
-      let answer = JSON.parse(answer_0);
-      let response_00 = String(xhr.responseText);
-      let response_0 = JSON.stringify(response_00);
-      let response = JSON.parse(response_0);
-      
-      if (response == answer){
-        window.location = '../index.php';
+   
+      if (xhr.responseText.length < 10){
+        window.location.href = "../index.php";
       }else{
-          document.getElementById('auth_response').innerHTML = response;
+          document.getElementById('auth_response').innerHTML = xhr.responseText;
       }
   
     };
   
-  xhr.send(data);
+
+
+ 
   
   
   };
